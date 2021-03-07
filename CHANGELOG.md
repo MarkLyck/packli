@@ -1,5 +1,19 @@
 # Changelog
 
+<a name="1.0.91"></a>
+## 1.0.91 (2021-03-07)
+
+### Changed
+
+- ⬆️ Update dependency @types/react to v17.0.3 [[4c3e0b0](https://github.com/MarkLyck/packli/commit/4c3e0b0a2c875d13e601b9363deca1f98ff391e2)]
+
+### Miscellaneous
+
+- 📝 version bump to v1.0.91 [[c1a14f0](https://github.com/MarkLyck/packli/commit/c1a14f03251bfbbbdb3ad2a23f4faf111ee3f2c4)]
+- 📝 generated changelog [[b6bbb1d](https://github.com/MarkLyck/packli/commit/b6bbb1d6905fc34385159814b2f1c15b8b7738ab)]
+-  Merge pull request [#10](https://github.com/MarkLyck/packli/issues/10) from MarkLyck/renovate/react-17.x [[e7d4340](https://github.com/MarkLyck/packli/commit/e7d43405574dbd6ef4c709eab9bca86aea27a078)]
+
+
 <a name="1.0.90"></a>
 ## 1.0.90 (2021-03-07)
 
