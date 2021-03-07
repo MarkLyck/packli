@@ -8,6 +8,7 @@ export const PACKING_LIST = gql`
       tags
       items {
         items {
+          id
           name
           description
           price
