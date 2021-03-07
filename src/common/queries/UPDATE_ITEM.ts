@@ -1,30 +1,34 @@
 import { gql } from '@apollo/client'
 
-export const CREATE_ITEM = gql`
-  mutation CREATE_ITEM(
+export const UPDATE_ITEM = gql`
+  mutation UPDATE_ITEM(
+    $id: ID!
     $listId: ID!
     $category: ID!
     $width: Float
     $height: Float
     $depth: Float
     $weight: Int
-    $uRL: String
+    $URL: String
     $price: Float
     $quantity: Int
     $name: String
     $description: String
+    $color: String
   ) {
-    itemCreate(
+    itemUpdate(
       data: {
+        id: $id
         width: $width
         height: $height
         depth: $depth
         weight: $weight
-        uRL: $uRL
-        price: $price
+        uRL: $URL
         quantity: $quantity
+        price: $price
         name: $name
         description: $description
+        color: $color
         packingList: { connect: { id: $listId } }
         category: { connect: { id: $category } }
       }

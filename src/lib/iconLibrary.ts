@@ -15,6 +15,7 @@ import {
   faQuestionCircle as faQuestionCircleReg,
   faDollarSign,
   faTags as faTagsReg,
+  faTrash as faTrashReg,
   faRedo as faRedoReg,
   faUser as faUserReg,
 } from '@fortawesome/pro-regular-svg-icons'
@@ -186,6 +187,7 @@ library.add(
   faTags,
   faTachometerAltDuo,
   faTagsReg,
+  faTrashReg,
   faTimes,
   faTimesOctagonDuo,
   faTools,
