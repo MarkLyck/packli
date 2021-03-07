@@ -107,7 +107,7 @@ const NewItem = ({ listId, item, onSuccess }: NewItemProps) => {
       </Form.Item>
 
       <Form.Item label="Category" name="category" rules={[{ required: true, message: 'Please select a category' }]}>
-        <Select placeholder="Please select a category" showSearch optionFilterProp="key">
+        <Select placeholder="Please select a category" showSearch optionFilterProp="key" loading={categoriesLoading}>
           {categories.map((category: any) => (
             <Option key={category.name} value={category.id}>
               {category.name}
