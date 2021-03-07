@@ -1,7 +1,13 @@
 import { initializeApollo, addApolloState } from '~/lib/apolloClient'
+import PackingLists from 'src/components/PackingLists'
 
 const IndexPage = () => {
-  return <>PackLi</>
+  return (
+    <>
+      Packli
+      <PackingLists />
+    </>
+  )
 }
 
 export async function getStaticProps() {

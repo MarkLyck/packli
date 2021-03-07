@@ -3,4 +3,8 @@
     <loc>http://localhost:3000</loc>
     <changefreq>hourly</changefreq>
   </url>
+  <url>
+    <loc>http://localhost:3000/list/[id]</loc>
+    <changefreq>hourly</changefreq>
+  </url>
 </urlset>
