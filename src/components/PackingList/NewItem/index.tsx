@@ -149,6 +149,7 @@ const NewItem = ({ listId, item, onSuccess }: NewItemProps) => {
       </Form.Item>
 
       <Form.Item label="Price" name="price" rules={[{ required: false }]}>
+        {/* @ts-ignore */}
         <InputNumber
           min={0}
           formatter={(value) => `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
