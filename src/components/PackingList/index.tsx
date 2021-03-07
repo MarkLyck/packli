@@ -112,7 +112,7 @@ const PackingLists = ({ id }: PackingListsProps) => {
     <Container>
       {packingList.name}
       <Space direction="vertical" style={{ width: '100%' }}>
-        {itemsByCategory.map((itemList: any, i: number) => (
+        {itemsByCategory.map((itemList: any) => (
           <Card title={itemList[0].category.name}>
             <Table columns={columns} dataSource={itemList} pagination={false} />
           </Card>

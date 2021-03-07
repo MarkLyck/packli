@@ -3,6 +3,7 @@ import PackingList from 'src/components/PackingList'
 
 const PackingListPage = () => {
   const router = useRouter()
+  // @ts-ignore
   return <PackingList id={router.query.id} />
 }
 
