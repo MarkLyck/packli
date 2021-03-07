@@ -7,10 +7,15 @@ const GlobalStyles = () => (
       html {
         padding: 0;
         margin: 0;
+        height: 100%;
       }
 
+      #__next {
+        height: 100%;
+      }
       body {
         font-family: Roboto, sans-serif;
+        height: 100%;
       }
 
       .ant-progress-inner {
