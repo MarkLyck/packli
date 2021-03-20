@@ -1,5 +1,121 @@
 # Changelog
 
+<a name="1.0.100"></a>
+## 1.0.100 (2021-03-20)
+
+### Miscellaneous
+
+- 📝 version bump to v1.0.100 [[8db73d8](https://github.com/MarkLyck/packli/commit/8db73d8ddf435d5a0e79d26693136d8b87c00797)]
+
+
+<a name="1.0.99"></a>
+## 1.0.99 (2021-03-20)
+
+### Miscellaneous
+
+- 📝 version bump to v1.0.99 [[42d1134](https://github.com/MarkLyck/packli/commit/42d11343689db4fdb90d179cd2979dfc9a8c84c2)]
+
+
+<a name="1.0.98"></a>
+## 1.0.98 (2021-03-20)
+
+### Miscellaneous
+
+- 📝 version bump to v1.0.98 [[bfbdde7](https://github.com/MarkLyck/packli/commit/bfbdde70202494f47824c43a9776667517ca742e)]
+
+
+<a name="1.0.97"></a>
+## 1.0.97 (2021-03-20)
+
+### Miscellaneous
+
+- 📝 version bump to v1.0.97 [[8527e46](https://github.com/MarkLyck/packli/commit/8527e4622121f3ee876efc217d1d393a77d55d28)]
+
+
+<a name="1.0.96"></a>
+## 1.0.96 (2021-03-20)
+
+### Miscellaneous
+
+- 📝 version bump to v1.0.96 [[045847d](https://github.com/MarkLyck/packli/commit/045847d49840634e85c1b5df2e562dd9d87e8097)]
+
+
+<a name="1.0.95"></a>
+## 1.0.95 (2021-03-20)
+
+### Changed
+
+- ⬆️ Update dependency @types/node to v14.14.35 [[6a3d4c1](https://github.com/MarkLyck/packli/commit/6a3d4c173ba79a55bf155268c4bfb4bc805b1eae)]
+
+### Miscellaneous
+
+- 📝 version bump to v1.0.95 [[e433aa7](https://github.com/MarkLyck/packli/commit/e433aa72c68d15ae724441a0d61df5120f815f9f)]
+-  Merge pull request [#15](https://github.com/MarkLyck/packli/issues/15) from MarkLyck/renovate/node-14.x [[9847ccb](https://github.com/MarkLyck/packli/commit/9847ccb843c85ffc0783aa9b16272430820c07d3)]
+
+
+<a name="1.0.94"></a>
+## 1.0.94 (2021-03-20)
+
+### Changed
+
+- ⬆️ Update dependency jotai to v0.15.3 [[14dde90](https://github.com/MarkLyck/packli/commit/14dde9043bd9f3af35dcfe0040200b1ca029b4a6)]
+- ⬆️ Update dependency react-minimal-pie-chart to v8.2.0 [[76bf968](https://github.com/MarkLyck/packli/commit/76bf968784a53091c5d6476d542db6296f10ba22)]
+- ⬆️ Update dependency react-scroll to v1.8.2 [[77df950](https://github.com/MarkLyck/packli/commit/77df9508916e27a09cc995106cf1472e7ed6de30)]
+
+### Miscellaneous
+
+- 📝 version bump to v1.0.94 [[0d8d76e](https://github.com/MarkLyck/packli/commit/0d8d76e99813bde2db8eba9267c5fce9abb8065a)]
+-  Merge pull request [#20](https://github.com/MarkLyck/packli/issues/20) from MarkLyck/renovate/jotai-0.x [[5b9d0dd](https://github.com/MarkLyck/packli/commit/5b9d0dde0abd8ef487490fefcc7c7d1ebefe4921)]
+-  Merge pull request [#17](https://github.com/MarkLyck/packli/issues/17) from MarkLyck/renovate/react-minimal-pie-chart-8.x [[66e7ef2](https://github.com/MarkLyck/packli/commit/66e7ef2c42ad30168afaff9a1ea1e9eac9017829)]
+-  Merge pull request [#12](https://github.com/MarkLyck/packli/issues/12) from MarkLyck/renovate/react-scroll-1.x [[eabcc9f](https://github.com/MarkLyck/packli/commit/eabcc9f2d6201d778d545ddfbeb6fcf89798acc1)]
+
+
+<a name="1.0.93"></a>
+## 1.0.93 (2021-03-20)
+
+### Changed
+
+- ⬆️ Update dependency @types/react-dom to v17.0.2 [[40c98e1](https://github.com/MarkLyck/packli/commit/40c98e170bc8950336ae35ba30781efb12c7c718)]
+
+### Miscellaneous
+
+- 📝 version bump to v1.0.93 [[ccaec37](https://github.com/MarkLyck/packli/commit/ccaec373741b2819192b30ebdf16f36367d869ae)]
+-  Merge pull request [#13](https://github.com/MarkLyck/packli/issues/13) from MarkLyck/renovate/react-dom-17.x [[8e0d7e2](https://github.com/MarkLyck/packli/commit/8e0d7e2819ee948a9280714dc0d9499239181257)]
+
+
+<a name="1.0.92"></a>
+## 1.0.92 (2021-03-20)
+
+### Added
+
+- ✨ work [[a00c3b2](https://github.com/MarkLyck/packli/commit/a00c3b2abbf97dfa88d5810e0c3d14c86a1ddcfe)]
+
+### Changed
+
+- ⬆️ Update dependency ahooks to v2.10.0 [[9b431ee](https://github.com/MarkLyck/packli/commit/9b431ee8a7058ad4e6b64a695e772c9e2c424cab)]
+- ⬆️ Update dependency gitmoji-cli to v3.3.1 [[22bd34a](https://github.com/MarkLyck/packli/commit/22bd34ac734293f0ce1fafd80c6817cb7fab761b)]
+- ⬆️ Update dependency framer-motion to v4 [[ccb7447](https://github.com/MarkLyck/packli/commit/ccb7447e7f1b9738feffa2400978faa78e941e87)]
+- ⬆️ Update Font Awesome [[8e8a2d8](https://github.com/MarkLyck/packli/commit/8e8a2d8282942a185fc4c5e663d956448075ed05)]
+- ⬆️ Update dependency tsconfig-paths-webpack-plugin to v3.5.1 [[e9e69f8](https://github.com/MarkLyck/packli/commit/e9e69f8e785533dfdacaabf80df1882e79612594)]
+- ⬆️ Update dependency @apollo/client to v3.3.12 [[87daec3](https://github.com/MarkLyck/packli/commit/87daec319b5e05823680f952e8bcca5959e16b1f)]
+- ⬆️ Update dependency next to v10.0.9 [[ed4c404](https://github.com/MarkLyck/packli/commit/ed4c404d98774ecf862b94a1ecb845363ef78fb8)]
+- ⬆️ Update dependency @ant-design/charts to v1.0.21 [[ed8f897](https://github.com/MarkLyck/packli/commit/ed8f897ec8bdbc88704a427fc0c5086bed3ec2f2)]
+
+### Miscellaneous
+
+- 📝 version bump to v1.0.92 [[0770f40](https://github.com/MarkLyck/packli/commit/0770f4002eb677189f606898b6c20aa8576f42ab)]
+-  Merge pull request [#16](https://github.com/MarkLyck/packli/issues/16) from MarkLyck/renovate/ant-design-charts-1.x [[2220eac](https://github.com/MarkLyck/packli/commit/2220eac461736a29bd4f3c4e25cb0fec9891f587)]
+-  Merge pull request [#18](https://github.com/MarkLyck/packli/issues/18) from MarkLyck/renovate/tsconfig-paths-webpack-plugin-3.x [[d8ecef4](https://github.com/MarkLyck/packli/commit/d8ecef476654791b3f3e87e3fd79c43c847c32a2)]
+-  Merge pull request [#22](https://github.com/MarkLyck/packli/issues/22) from MarkLyck/renovate/apollo-graphql-packages [[21599a6](https://github.com/MarkLyck/packli/commit/21599a6d6840a933333514044b79a5e6381081f2)]
+-  Merge pull request [#21](https://github.com/MarkLyck/packli/issues/21) from MarkLyck/renovate/nextjs-monorepo [[a125000](https://github.com/MarkLyck/packli/commit/a1250004c690146d7dbf480a1627de572da7b0b3)]
+-  Merge pull request [#23](https://github.com/MarkLyck/packli/issues/23) from MarkLyck/renovate/font-awesome [[bd6824c](https://github.com/MarkLyck/packli/commit/bd6824c6c8bdf93d3c49d8c5a4bf7d3a19c41840)]
+-  Merge pull request [#25](https://github.com/MarkLyck/packli/issues/25) from MarkLyck/renovate/framer-motion-4.x [[64f9f3c](https://github.com/MarkLyck/packli/commit/64f9f3cf21bcf96a23fa843db75a2cafd12b170c)]
+-  Merge pull request [#26](https://github.com/MarkLyck/packli/issues/26) from MarkLyck/renovate/gitmoji-cli-3.x [[e2f2c80](https://github.com/MarkLyck/packli/commit/e2f2c80527d70aef67922d3adf7962b4c0158732)]
+-  Merge pull request [#27](https://github.com/MarkLyck/packli/issues/27) from MarkLyck/renovate/ahooks-2.x [[1411cf1](https://github.com/MarkLyck/packli/commit/1411cf10b624d1b84ea5d1b00d126906a8a0a98f)]
+-  Merge pull request [#28](https://github.com/MarkLyck/packli/issues/28) from MarkLyck/packlist [[97bebe1](https://github.com/MarkLyck/packli/commit/97bebe18711901b7651f889442fee8e8f9f0a444)]
+- 📝 generated changelog [[5f7b562](https://github.com/MarkLyck/packli/commit/5f7b562dc2e000ed5ee8692b000799ea7129e336)]
+
+
 <a name="1.0.91"></a>
 ## 1.0.91 (2021-03-07)
 
