@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Form, Input, InputNumber, Button, Select, Space } from 'antd'
 import { useQuery, useMutation } from '@apollo/client'
 import { CREATE_ITEM, UPDATE_ITEM, CATEGORIES } from 'src/common/queries'
+import CategoryIcon from 'src/components/CategoryIcon'
 
 const { Option } = Select
 
@@ -110,7 +111,8 @@ const NewItem = ({ listId, item, onSuccess }: NewItemProps) => {
         <Select placeholder="Please select a category" showSearch optionFilterProp="key" loading={categoriesLoading}>
           {categories.map((category: any) => (
             <Option key={category.name} value={category.id}>
-              {category.name}
+              <CategoryIcon category={category.name} />
+              {category.name.cap()}
             </Option>
           ))}
         </Select>

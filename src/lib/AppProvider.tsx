@@ -6,6 +6,7 @@ import 'src/lib/iconLibrary'
 import theme from 'src/lib/theme'
 import 'antd/dist/antd.less'
 import GlobalStyles from './GlobalStyles'
+import 'src/lib/prototypes'
 
 type AppProviderProps = {
   children: React.ReactNode
