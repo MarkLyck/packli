@@ -4,16 +4,26 @@ import styled from '@emotion/styled'
 import { useToggle } from 'ahooks'
 import { Table, Typography, message, Button, Space, Modal } from 'antd'
 import { PACKING_LIST } from 'src/common/queries'
+import CategoryIcon from 'src/components/CategoryIcon'
 import NewItem from './NewItem'
 import Delete from './Delete'
+import WeightRender from './WeightRender'
+import SizeRender from './SizeRender'
+import { numberFormatter } from 'src/common/utils/formatters'
 
 const { Text, Title } = Typography
+
+const CategoryTitle = styled(Title)`
+  margin-top: 24px;
+  text-transform: capitalize;
+`
 
 const Container = styled.div`
   padding: 32px;
   height: 100%;
   width: 100%;
-  background-color: ${(p) => p.theme.palette.neutral[200]};
+  overflow-y: scroll;
+  background-color: ${(p) => p.theme.palette.neutral[300]};
 `
 
 type PackingListsProps = {
@@ -63,26 +73,18 @@ const PackingLists = ({ id }: PackingListsProps) => {
       dataIndex: 'weight',
       key: 'weight',
       width: 160,
-      render: (value: string) => {
+      render: (value: number) => {
         if (!value) return null
 
-        return <Text>{value}g</Text>
+        return <WeightRender weight={value} />
       },
     },
     {
-      title: 'Size (cm)',
+      title: 'Size (litres)',
       dataIndex: 'size',
       key: 'size',
       width: 160,
-      render: (_: string, item: any) => {
-        if (!item.width || !item.height || !item.depth) return null
-
-        return (
-          <Text>
-            {item.width}x{item.height}x{item.depth}
-          </Text>
-        )
-      },
+      render: (_: string, item: any) => <SizeRender height={item.height} width={item.width} depth={item.depth} />,
     },
     {
       title: 'Price',
@@ -133,23 +135,26 @@ const PackingLists = ({ id }: PackingListsProps) => {
       <Space direction="vertical" style={{ width: '100%' }}>
         {itemsByCategory.map((itemList: any) => (
           <Space key={itemList[0].category.name} direction="vertical" style={{ width: '100%' }}>
-            <Title level={4}>{itemList[0].category.name}</Title>
+            <CategoryTitle level={4}>
+              <CategoryIcon category={itemList[0].category.name} />
+              {itemList[0].category.name}
+            </CategoryTitle>
             <Table
               columns={columns}
               dataSource={itemList}
               pagination={false}
               rowKey="id"
               summary={(pageData) => {
-                console.log('🔈 ~ pageData', pageData)
-
                 let totalWeight = 0
                 let totalPrice = 0
                 let totalItems = 0
+                let totalLitres = 0
 
                 pageData.forEach((item) => {
                   totalItems += item.quantity
                   totalWeight += item.weight * item.quantity
                   totalPrice += item.price * item.quantity
+                  totalLitres += ((item.height * item.width * item.depth) / 1000) * item.quantity
                 })
 
                 return (
@@ -158,9 +163,11 @@ const PackingLists = ({ id }: PackingListsProps) => {
                       {totalItems} item{totalItems !== 1 ? 's' : ''}
                     </Table.Summary.Cell>
                     <Table.Summary.Cell index={1}></Table.Summary.Cell>
-                    <Table.Summary.Cell index={2}>{totalWeight}g</Table.Summary.Cell>
-                    <Table.Summary.Cell index={3}></Table.Summary.Cell>
-                    <Table.Summary.Cell index={4}>${totalPrice}</Table.Summary.Cell>
+                    <Table.Summary.Cell index={2}>{numberFormatter.format(totalWeight)}g</Table.Summary.Cell>
+                    <Table.Summary.Cell index={3}>
+                      {numberFormatter.format(Number(totalLitres.toFixed(2)))}l
+                    </Table.Summary.Cell>
+                    <Table.Summary.Cell index={4}>${totalPrice.toFixed(2)}</Table.Summary.Cell>
                   </Table.Summary.Row>
                 )
               }}
@@ -179,7 +186,13 @@ const PackingLists = ({ id }: PackingListsProps) => {
         </Button>
       </Space>
       <Modal visible={newItemModalVisible} onCancel={() => toggleModal()} onOk={() => toggleModal()}>
-        <NewItem listId={id} item={editItem} onSuccess={() => toggleModal()} />
+        <NewItem
+          listId={id}
+          item={editItem}
+          onSuccess={() => {
+            window.setTimeout(() => toggleModal(), 100)
+          }}
+        />
       </Modal>
     </Container>
   )
