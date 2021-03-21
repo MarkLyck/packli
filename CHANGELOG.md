@@ -1,5 +1,19 @@
 # Changelog
 
+<a name="1.0.101"></a>
+## 1.0.101 (2021-03-21)
+
+### Added
+
+- ✨ edit page [[c61e51a](https://github.com/MarkLyck/packli/commit/c61e51a62f14f76247907195d6d7e2e9114064fb)]
+
+### Miscellaneous
+
+- 📝 version bump to v1.0.101 [[be2894c](https://github.com/MarkLyck/packli/commit/be2894cbcea8c2e64578f41cfac5a925ad4cfd08)]
+-  Merge branch &#x27;main&#x27; of https://github.com/MarkLyck/packli into main [[3a2c89d](https://github.com/MarkLyck/packli/commit/3a2c89dd9223f08477d4efd569bc784d99f2b5bd)]
+- 📝 generated changelog [[395d29f](https://github.com/MarkLyck/packli/commit/395d29f99aff8aad684e9c334e44d751ce9a0a9d)]
+
+
 <a name="1.0.100"></a>
 ## 1.0.100 (2021-03-20)
 
