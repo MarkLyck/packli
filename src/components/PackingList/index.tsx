@@ -27,10 +27,11 @@ const Container = styled.div`
 `
 
 type PackingListsProps = {
+  editable?: boolean
   id: string
 }
 
-const PackingLists = ({ id }: PackingListsProps) => {
+const PackingLists = ({ id, editable }: PackingListsProps) => {
   const [newItemModalVisible, { toggle: toggleModal }] = useToggle()
   const [editItem, setEditItem] = useState(null)
   const { data, error } = useQuery(PACKING_LIST, { variables: { id } })
@@ -55,7 +56,7 @@ const PackingLists = ({ id }: PackingListsProps) => {
 
   const itemsByCategory = Object.values(categoriesMap)
 
-  const columns = [
+  const columns: any[] = [
     {
       title: 'Name',
       dataIndex: 'name',
@@ -103,7 +104,10 @@ const PackingLists = ({ id }: PackingListsProps) => {
       key: 'quantity',
       width: 160,
     },
-    {
+  ]
+
+  if (editable) {
+    columns.push({
       title: 'Actions',
       dataIndex: 'actions',
       key: 'actions',
@@ -126,8 +130,8 @@ const PackingLists = ({ id }: PackingListsProps) => {
           </Space>
         )
       },
-    },
-  ]
+    })
+  }
 
   return (
     <Container>
@@ -175,15 +179,17 @@ const PackingLists = ({ id }: PackingListsProps) => {
           </Space>
         ))}
 
-        <Button
-          type="primary"
-          onClick={() => {
-            setEditItem(null)
-            toggleModal()
-          }}
-        >
-          Add item
-        </Button>
+        {editable && (
+          <Button
+            type="primary"
+            onClick={() => {
+              setEditItem(null)
+              toggleModal()
+            }}
+          >
+            Add item
+          </Button>
+        )}
       </Space>
       <Modal visible={newItemModalVisible} onCancel={() => toggleModal()} onOk={() => toggleModal()}>
         <NewItem
