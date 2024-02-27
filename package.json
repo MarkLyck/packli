@@ -18,8 +18,8 @@
     "@antv/data-set": "0.11.8",
     "@antv/g2": "4.1.12",
     "@apollo/client": "3.3.12",
-    "@emotion/react": "11.1.5",
-    "@emotion/styled": "11.1.5",
+    "@emotion/react": "11.11.4",
+    "@emotion/styled": "11.11.0",
     "@fortawesome/fontawesome-svg-core": "1.2.35",
     "@fortawesome/free-brands-svg-icons": "5.15.3",
     "@fortawesome/pro-duotone-svg-icons": "5.15.3",
@@ -57,7 +57,7 @@
     "react-scroll": "1.8.2"
   },
   "devDependencies": {
-    "@emotion/babel-plugin": "11.2.0",
+    "@emotion/babel-plugin": "11.11.0",
     "@storybook/addon-essentials": "6.1.21",
     "@storybook/react": "6.1.21",
     "@types/lodash": "4.14.168",
